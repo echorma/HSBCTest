@@ -1,0 +1,107 @@
+[debug] > Exec(early(addDefaultCommands), None, None)
+[debug] > Exec(addDefaultCommands, None, None)
+[debug] > Exec(early(initialize), None, None)
+[debug] > Exec(initialize, None, None)
+[debug] > Exec(early(addPluginSbtFile="""C:\Users\echomax\AppData\Local\Temp\idea1.sbt"""), None, None)
+[debug] > Exec(addPluginSbtFile="""C:\Users\echomax\AppData\Local\Temp\idea1.sbt""", None, None)
+[debug] > Exec(boot, None, None)
+[debug] > Exec(writeSbtVersion, None, None)
+[debug] > Exec(reload, None, None)
+[debug] > Exec(sbtStashOnFailure, None, None)
+[debug] > Exec(onFailure loadFailed, None, None)
+[debug] > Exec(loadp, None, None)
+[info] welcome to sbt 1.9.9 (Oracle Corporation Java 1.8.0_391)
+[debug] Load.defaultLoad until apply took 300.4534ms
+[debug]           Load.loadUnit: plugins took 152.7003ms
+[debug]           Load.loadUnit: defsScala took 0.6108ms
+[debug] [Loading] Scanning directory E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest\project
+[debug]             Load.loadUnit: mkEval took 14.3901ms
+[debug] [Loading] Found non-root projects 
+[debug] [Loading] Done in E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest\project, returning: ()
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.MiniDependencyTreePlugin,sbt.plugins.JUnitXmlReportPlugin,sbt.plugins.SemanticdbPlugin)
+[debug] Plugins.deducer#function took 64.7148 ms
+[info] loading settings for project hsbctest-build from idea1.sbt ...
+[debug]               Load.resolveProject(hsbctest-build) took 69.7524ms
+[debug]             Load.loadTransitive: finalizeProject(Project(id hsbctest-build, base: E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest\project, plugins: List(<none>))) took 152.5166ms
+[debug] [Loading] Done in E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest\project, returning: (hsbctest-build)
+[debug]           Load.loadUnit: loadedProjectsRaw took 6276.5898ms
+[debug]           Load.loadUnit: cleanEvalClasses took 8.5776ms
+[debug]         Load.loadUnit(file:/E:/找工作准备/笔试题/汇丰笔试题/code/HSBCTest/project/, ...) took 6448.2084ms
+[debug]       Load.apply: load took 6594.7814ms
+[debug]       Load.apply: resolveProjects took 5.849ms
+[debug]       Load.apply: finalTransforms took 142.9438ms
+[debug]       Load.apply: config.delegates took 12.7387ms
+[debug]       Load.apply: Def.make(settings)... took 897.6098ms
+[debug]       Load.apply: structureIndex took 195.9775ms
+[debug]       Load.apply: mkStreams took 2.522ms
+[info] loading project definition from E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest\project
+[debug] Running task... Cancel: Signal, check cycles: false, forcegc: true
+[debug]     Load.loadUnit: plugins took 11465.6325ms
+[debug]     Load.loadUnit: defsScala took 0.0042ms
+[debug] [Loading] Scanning directory E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest
+[debug]       Load.loadUnit: mkEval took 0.2848ms
+[debug] [Loading] Found root project root w/ remaining 
+[debug] deducing auto plugins based on known facts Set(Atom(sbt.plugins.CorePlugin)) and clauses Clauses(Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.ScriptedPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.SbtPlugin),Set(Atom(sbt.ScriptedPlugin)))
+[debug] Clause(Atom(sbt.plugins.SemanticdbPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JUnitXmlReportPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.MiniDependencyTreePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.StructurePlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.IdeaShellPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.IvyPlugin)))
+[debug] Clause(Atom(sbt.plugins.IvyPlugin),Set(Atom(sbt.plugins.JvmPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.SemanticdbPlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.JUnitXmlReportPlugin)))
+[debug] Clause(Atom(sbt.plugins.CorePlugin),Set(Atom(sbt.plugins.Giter8TemplatePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(sbt.plugins.MiniDependencyTreePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.StructurePlugin)))
+[debug] Clause(Atom(sbt.plugins.JvmPlugin),Set(Atom(org.jetbrains.sbt.IdeaShellPlugin)))
+[debug] Clause(And(Set(Atom(sbt.plugins.CorePlugin), Atom(sbt.plugins.JvmPlugin))),Set(Atom(org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin))))
+[debug]   :: deduced result: Matched(sbt.plugins.CorePlugin,sbt.plugins.Giter8TemplatePlugin,sbt.plugins.IvyPlugin,sbt.plugins.JvmPlugin,sbt.plugins.SemanticdbPlugin,org.jetbrains.sbt.indices.SbtIntellijIndicesPlugin,sbt.plugins.JUnitXmlReportPlugin,org.jetbrains.sbt.IdeaShellPlugin,org.jetbrains.sbt.StructurePlugin,sbt.plugins.MiniDependencyTreePlugin)
+[debug] Plugins.deducer#function took 16.116 ms
+[info] loading settings for project root from build.sbt ...
+[debug]         Load.resolveProject(root) took 59.9384ms
+[debug]       Load.loadTransitive: finalizeProject(Project(id root, base: E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest, plugins: List(<none>))) took 79.4675ms
+[debug] [Loading] Done in E:\找工作准备\笔试题\汇丰笔试题\code\HSBCTest, returning: (root)
+[debug]     Load.loadUnit: loadedProjectsRaw took 3964.8427ms
+[debug]     Load.loadUnit: cleanEvalClasses took 20.2468ms
+[debug]   Load.loadUnit(file:/E:/找工作准备/笔试题/汇丰笔试题/code/HSBCTest/, ...) took 15452.6321ms
+[debug] Load.apply: load took 15493.6608ms
+[debug] Load.apply: resolveProjects took 0.3205ms
+[debug] Load.apply: finalTransforms took 97.6066ms
+[debug] Load.apply: config.delegates took 0.3451ms
+[debug] Load.apply: Def.make(settings)... took 226.6834ms
+[debug] Load.apply: structureIndex took 48.1704ms
+[debug] Load.apply: mkStreams took 0.004ms
+[info] set current project to HSBCTest (in build file:/E:/找工作准备/笔试题/汇丰笔试题/code/HSBCTest/)
+[debug] > Exec(sbtPopOnFailure, None, None)
+[debug] > Exec(resumeFromFailure, None, None)
+[debug] > Exec(notifyUsersAboutShell, None, None)
+[debug] > Exec(iflast shell, None, None)
+[debug] > Exec(; set ideaPort in Global := 63756 ; idea-shell, None, None)
+[debug] > Exec(set ideaPort in Global := 63756, None, None)
+[info] Defining Global / ideaPort
+[info] The new value will be used by Compile / compile, Test / compile
+[debug] Defining 
+[debug] 	Global / ideaPort
+[debug] 
+[debug] The new value will be used by 
+[debug] 	Compile / compile
+[debug] 	Test / compile
+[info] Reapplying settings...
+[info] set current project to HSBCTest (in build file:/E:/找工作准备/笔试题/汇丰笔试题/code/HSBCTest/)
+[debug] > Exec(idea-shell, None, None)
