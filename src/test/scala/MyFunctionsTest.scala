@@ -28,6 +28,7 @@ class MyFunctionsTest extends AnyFunSuite with BeforeAndAfter {
     val inputDF = sc.textFile(inFile).map(_.split(',')).map(x=>CustomType(x(0).trim.replace("\'",""),x(1).trim.replace("\'",""),x(2).trim.replace("\'",""),x(3).trim.toInt)).toDF()
     val inputSize = 3
     val result: DataFrame = MyFunctions.func(inputDF, inputSize)
+    println(result.show())
     val eFile = "expect1.txt"
     val expectDF: DataFrame = sc.textFile(eFile).map(_.split(',')).map(x=>CustomType2(x(0).trim.replace("\'",""),x(1).trim.toInt)).toDF()
     val diff1 = result.except(expectDF)
@@ -43,6 +44,7 @@ class MyFunctionsTest extends AnyFunSuite with BeforeAndAfter {
     val inputDF = sc.textFile(inFile).map(_.split(',')).map(x=>CustomType(x(0).trim.replace("\'",""),x(1).trim.replace("\'",""),x(2).trim.replace("\'",""),x(3).trim.toInt)).toDF()
     val inputSize = 5
     val result: DataFrame = MyFunctions.func(inputDF, inputSize)
+    println(result.show())
     val eFile = "expect2.txt"
     val expectDF: DataFrame = sc.textFile(eFile).map(_.split(',')).map(x=>CustomType2(x(0).trim.replace("\'",""),x(1).trim.toInt)).toDF()
     val diff1 = result.except(expectDF)
@@ -58,6 +60,7 @@ class MyFunctionsTest extends AnyFunSuite with BeforeAndAfter {
     val inputDF = sc.textFile(inFile).map(_.split(',')).map(x=>CustomType(x(0).trim.replace("\'",""),x(1).trim.replace("\'",""),x(2).trim.replace("\'",""),x(3).trim.toInt)).toDF()
     val inputSize = 7
     val result: DataFrame = MyFunctions.func(inputDF, inputSize)
+    println(result.show())
     val eFile = "expect3.txt"
     val expectDF: DataFrame = sc.textFile(eFile).map(_.split(',')).map(x=>CustomType2(x(0).trim.replace("\'",""),x(1).trim.toInt)).toDF()
     val diff1 = result.except(expectDF)
